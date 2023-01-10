@@ -1,9 +1,33 @@
 .p-stage{
     text-align: center;
     font-weight: bold;
-    border: solid 1px;
+    border: solid 2px;
 }
 .logo-elixir{
-    margin: 0px;
     width: auto;
+}
+.container{
+    background : linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+
+}
+p{
+    font-size: 16px;
+    color:whitesmoke;
+}
+h1{
+    margin: 0px;
+    padding: 0px;
+}
+h2{
+    color:whitesmoke; 
+}
+.main-container{
+    background : linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    box-shadow : 10px;
+}
+body, .title-page{
+    background : white;
 }
