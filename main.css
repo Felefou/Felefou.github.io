@@ -1,5 +1,6 @@
 body {
   margin: 0 auto;
+  font-family: monospace;
 }
 
 
@@ -34,7 +35,11 @@ h1 {
   margin: 0;
   padding: 0;
 }
-
+.t1{
+  margin-left:auto;
+  margin-right:auto;
+  border: 2px solid;
+}
 .flex {
   /*Flexbox for containers*/
   display: flex;
@@ -42,6 +47,28 @@ h1 {
   align-items: center;
   text-align: center;
 }
+.t1 tr {
+  border: 2px solid;
+}
+table {
+  border: medium solid #000000;
+  border-collapse: collapse;
+  width: 50%;
+  }
+  th {
+  font-family: monospace;
+  border: thin solid #000000;
+  width: 50%;
+  padding: 5px;
+  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  }
+  td {
+  font-family: sans-serif;
+  border: thin solid #000000;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  background-color: #ffffff;}
 
 .waves {
   position: relative;
@@ -59,10 +86,25 @@ h1 {
   background-color: white;
 }
 
-.Stages {
-  height: 50vh;
+.placement-stage {
   text-align: center;
   background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  width:100%;
+}
+
+.Stages{
+  margin-left:auto;
+  margin-right:auto;
+  width:50%;
+}
+.elixir-creation{
+  margin-bottom: 10px;
+  border: 2px solid;
+}
+
+.beal-edelweiss{
+  margin-bottom: 10px;
+  border: 2px solid;
 }
 
 /* Animation */
