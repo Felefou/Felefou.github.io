@@ -17,25 +17,146 @@ h1 {
   background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
   color: white;
 }
-
-.logo {
+#presentation {
+  display: flex;
+  margin-bottom: 10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#logo {
   width: 50px;
   fill: white;
   padding-right: 15px;
   display: inline-block;
   vertical-align: middle;
 }
-.column-evolution{
-  column-count:3;
+
+
+
+#image-jeremy{
+  float: left;
+  width: 0%;
+}
+#description{
+  overflow: hidden;
+  width:100%;
+  margin-bottom: 20px;
+}
+
+nav{
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  position: sticky;
+  z-index: 100;
+  top: 0px;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.timeline{
+  width:800px;
+  margin: auto;
+  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  color:#fff;
+  padding:30px 20px;
+  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+}
+.timeline ul{
+  list-style-type:none;
+  border-left:2px solid #ffffff;
+  padding:10px 5px;
+}
+.timeline ul li{
+  padding:20px 20px;
+  position:relative;
+  cursor:pointer;
+  transition:.5s;
+}
+.timeline ul li span{
+  display:inline-block;
+  background-color:#1685b8;
+  border-radius:25px;
+  padding:2px 5px;
+  font-size:15px;
+  text-align:center;
+}
+.timeline ul li .content h3{
+  color:#ffffff;
+  font-size:17px;
+  padding-top:5px;
+}
+.timeline ul li .content p{
+  padding:5px 0px 15px 0px;
+  font-size:15px;
+}
+.timeline ul li:before{
+  position:absolute;
+  content:'';
+  width:10px;
+  height:10px;
+  background-color:#34ace0;
+  border-radius:50%;
+  left:-11px;
+  top:28px;
+  transition:.5s;
+}
+.timeline ul li:hover{
+  background-color:#071f2a;
+}
+.timeline ul li:hover:before{
+  background-color:#0F0;
+  box-shadow:0px 0px 10px 2px #0F0;
+}
+@media (max-width:300px){
+  .timeline{
+    width:100%;
+    padding:30px 5px 30px 10px;
+  }
+  .timeline ul li .content h3{
+    color:#34ace0;
+    font-size:15px;
+  }
+
+}
+
+
+nav li{
+  float: right;
+  width: 10%;/*100% divisé par le nombre d'éléments de menu*/
+  text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav a{
+  display: block; /*Toute la surface sera cliquable*/
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+  padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+  color: blue;
+  border-bottom: 2px solid blue;
 }
 
 .inner-header {
-  height: 65vh;
+  height: 25vh;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-.t1{
+#t1{
   margin-left:auto;
   margin-right:auto;
   border: 2px solid;
@@ -47,7 +168,7 @@ h1 {
   align-items: center;
   text-align: center;
 }
-.t1 tr {
+#t1 tr {
   border: 2px solid;
 }
 table {
@@ -70,7 +191,7 @@ table {
   text-align: center;
   background-color: #ffffff;}
 
-.waves {
+#waves {
   position: relative;
   width: 100%;
   height: 15vh;
@@ -80,55 +201,131 @@ table {
   max-height: 150px;
 }
 
-.Parcours {
+#parcours {
   height: 50vh;
   text-align: center;
   background-color: white;
 }
 
-.placement-stage {
+#placement-stage {
   text-align: center;
-  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  display:flex;
+  background-color: white;
   width:100%;
 }
 
-.Stages{
+#stages{
   margin-left:auto;
   margin-right:auto;
   width:50%;
+  overflow: hidden;
 }
-.elixir-creation{
+p {
+  font-size: 1.3em;
+}
+#elixir-creation{
   margin-bottom: 10px;
+  border: 2px solid;
+  float:left;
+  width:50%;
+  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+}
+#Gedimagination{
+  margin-bottom: 10px;
+  width: 50%;
+  float:left;
+  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
   border: 2px solid;
 }
 
-.beal-edelweiss{
+#beal-edelweiss{
   margin-bottom: 10px;
+  width: 50%;
+  float:right;
+  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
   border: 2px solid;
 }
+div.img {
+  position: relative;
+  font-size: 30px;
+  z-index: 1;
+  overflow: hidden;
+  text-align: right;
+}
+div.img:before {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 100%;
+  margin-left: -100%;
+  text-align: right;
+  height: 1px;
+  content: '\a0';
+  background-color: rgb(0, 0, 0);
+}
+#youtube{
+  margin-bottom: 10px;
+  width: 25%;
+  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  border: 2px solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#moteurs{
+  margin-bottom: 10px;
+  width: 25%;
+  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  border: 2px solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#image-youtube img{
+  width: 150px;
+  height: 100px;
+}
+#image-moteurs img{
+  width: 175px;
+  height: 150px;
+}
+#image-beal img{
+  width: 420px;
+  height: 125px;
+}
+
+#image-elixir img{
+  width: 420px;
+  height: 125px;
+}
+#image-Gedimagination img{
+  width: 420px;
+  height: 125px;
+}
+
 
 /* Animation */
 
-.parallax>use {
+#parallax>use {
   animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }
 
-.parallax>use:nth-child(1) {
+#parallax>use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 7s;
 }
 
-.parallax>use:nth-child(2) {
+#parallax>use:nth-child(2) {
   animation-delay: -3s;
   animation-duration: 10s;
 }
 
-.parallax>use:nth-child(3) {
+#parallax>use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 13s;
 }
 
-.parallax>use:nth-child(4) {
+#parallax>use:nth-child(4) {
   animation-delay: -5s;
   animation-duration: 20s;
 }
@@ -145,12 +342,12 @@ table {
 
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
-  .waves {
+  #waves {
     height: 40px;
     min-height: 40px;
   }
 
-  .content {
+  #content {
     height: 30vh;
   }
 

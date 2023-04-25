@@ -8,6 +8,15 @@
 </head>
 
 <body>
+  <nav>
+    <ul>
+      <li><a href="#veille-technologie">Veille Technologique</a></li>
+      <li><a href="#placement-stage">Stages</a></li>
+      <li><a href="#column-evolution">Compétences</a></li>
+      <li><a href="#competences">Parcours</a></li>
+      <li><a href="#presentation">Qui suis-je?</a></li>
+    </ul>
+  </nav>
   <div class="header">
 
     <!--Content before waves-->
@@ -21,17 +30,17 @@
     c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
       </g>
       </svg>
-      <h1>Portfolio - Jérémy PARPETTE</h1>
+      <h1>Jérémy PARPETTE, Développeur d'Applications</h1>
     </div>
 
     <!--Waves Container-->
     <div>
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      <svg id="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         <defs>
           <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
         </defs>
-        <g class="parallax">
+        <g id="parallax">
           <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
           <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
           <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
@@ -42,69 +51,133 @@
   </div>
 
   <div class="main-container">
-    <div class="Parcours">
-      <h2>Présentation</h2>
-      <p>Je me présente Jérémy PARPETTE, j'ai 19 ans et je suis étudiant en BTS SIO seconde année</p>
-
-      <h2>Mon parcours scolaire</h2>
-      <div class="column-evolution">
-        <div class="column-1">
-          <h3>2021</h3>
-          <span>Baccalauréat STID2 option SIN</span>
-          <p>Obtenu avec la mention assez bien.</p>
-        </div>
-
-        <div class="column-2">
-          <h3>2021-2023</h3>
-          <span>BTS SIO Option SLAM</span>
-          <p>En cours de formation.</p>
-        </div>
-
-        <div class="column-3">
-          <h3>Prochainement</h3>
-          <span>Licence professionelle</span>
-          <p>Ma poursuite d'étude envisagée pour l'année qui va suivre.</p>
+    <div id="parcours">
+      <h2>Qui suis-je?</h2>
+      <div id="who">
+        <div id="presentation">
+          <div id="image-jeremy">
+          </div>
+          <div id="description">
+            <p>Je me présente Jérémy PARPETTE, j'ai 19 ans et je suis étudiant en BTS SIO seconde année</p>
+            <p><strong>Curieux, Entraide et Déterminé</strong> : Voilà ce qui me qualifie.</p>
+          </div>
         </div>
       </div>
+
+      <div class="timeline">
+        <h2>Mon parcours scolaire</h2>
+        <ul>
+          <li>
+            <span>2023-2024</span>
+            <div class="content">
+              <h3>Licence professionelle Dev Ops</h3>
+              <p>
+                Ma poursuite d'étude envisagée pour l'année qui va suivre.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span>2021-2023</span>
+            <div class="content">
+              <h3>BTS SIO Option SLAM</h3>
+              <p>
+                En cours de formation.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span>2021</span>
+            <div class="content">
+              <h3>Baccalauréat STID2 option SIN</h3>
+              <p>
+                Obtenu avec la mention assez bien.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="img">
+        <img src="http://i.stack.imgur.com/qh235.png" />
+      </div>
+
       <h2>Compétences</h2>
-        <table class="t1">
+      <div id="competences">
+        <table id="t1">
           <tr>
-            <th>Language</th>
-            <td>PHP, Java, C#, Smarty, HTML, CSS</td>
+            <th style="color:#ffffff;">Language</th>
+            <td>PHP, Java, C#, Smarty, HTML, CSS, SQL</td>
           </tr>
           <tr>
-            <th>IDE</th>
+            <th style="color:#ffffff;">IDE</th>
             <td>VSCode, Android Studio</td>
           </tr>
           <tr>
-            <th>Framework</th>
-            <td>Laravel</td>
+            <th style="color:#ffffff;">Framework</th>
+            <td>Laravel, Symfony</td>
           </tr>
           <tr>
-            <th>Outils</th>
-            <td>Laragon, StarUML</td>
+            <th style="color:#ffffff;">Outils</th>
+            <td>Laragon, StarUML, Postman</td>
           </tr>
           
         </table>
-      <div class="placement-stage">
-        <div class="Stages">
-          <h2>Stages</h2>
-          <div class="elixir-creation">
-            <img src="elixir.png" alt="Logo d'Elixir Créations">
-            <br />
-            <p><a href="stages.html">Développeur Stagiaire - Elixir Créations</a></p>
-            <p>En mai 2022 à juillet 2022</p>
-          </div>
-          <div class="beal-edelweiss">
-            <div class="image-beal">
-            <img src="beal-test.png" alt="Logo de Béal">
+      </div>
+      <div class="img">
+        <img src="http://i.stack.imgur.com/qh235.png" />
+      </div>
+      
+      <div id="placement-stage">
+        <div id="stages">
+          <h2>Stages & Expériences</h2>
+          <div id="elixir-creation">
+            <div id="image-elixir">
+              <img src="elixir.png" alt="Logo d'Elixir Créations">
             </div>
             <br />
-            <p><a href="stages.html#d-stage">Stagiaire Service Informatique - Béal</a></p>
-            <p>En janvier 2023 à juillet 2023</p>
+            <p><a href="stages.html" style="color:#ffffff;">Développeur Stagiaire - Elixir Créations</a></p>
+            <p style="color:#ffffff;">En mai 2022 à juillet 2022</p>
+          </div>
+          <div id="beal-edelweiss">
+            <div id="image-beal">
+              <img src="beal-test.png" alt="Logo de Béal">
+            </div>
+            <br />
+            <p><a href="deuxième-stage.html" style="color:#ffffff;">Stagiaire Service Informatique - Béal</a></p>
+            <p style="color:#ffffff;">En janvier 2023 à juillet 2023</p>
+          </div>
+          <div id="Gedimagination">
+              <div id="image-Gedimagination">
+                <img src="gedimat.png" alt="Gédimagination">                
+              </div>
+              <p><a href="gedimagination.html" style="color:#ffffff;">Projet Gédimagination</a></p>
+              <p style="color:#ffffff;">En novembre 2022 à fin mai 2023</p>
           </div>
         </div>
       </div>
+      <div class="img">
+        <img src="http://i.stack.imgur.com/qh235.png" />
+      </div>
+      <div id="veille-technologie">
+        <h2>Veille Technologique</h2>
+        <div id="youtube">
+          <br />
+          <p style="color:#ffffff;"><strong>Youtube</strong></p>
+          <div id="image-youtube">
+            <img src="logo-youtube-vrai.png" alt="Youtube">                
+          </div>
+          <p style="color:#ffffff;">Micode, LeoTechMaker...</p>
+        </div>
+        <div id="moteurs">
+          <p style="color:#ffffff;"><strong>Moteurs de jeux</strong></p>
+          <div id="image-moteurs">
+            <img src="unreal-engine.png" alt="Unreal Engine"> 
+            <img src="unity.png" alt="Unity">                
+          </div>
+          <p style="color:#ffffff;">Unreal Engine, Unity..</p>
+        </div>
+
+      </div>
+
     </div>
   </div>
 </body>

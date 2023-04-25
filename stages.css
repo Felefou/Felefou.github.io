@@ -1,10 +1,11 @@
-.p-stage, .d-stage{
+.p-stage, .d-stage, .gedimat-text{
     text-align: center;
     font-weight: bold;
     border: solid 2px;
 }
-.logo-elixir, .logo-beal{
+.logo-elixir, .logo-beal, .logo-gedimat{
     width: auto;
+    border: 2px, solid;
 }
 .container{
     background : linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
@@ -19,7 +20,7 @@
 p{
     font-size: 16px;
     color:whitesmoke;
-    line-height: 1.3px;
+    line-height: 20px;
 }
 h1{
     margin: 0px;
