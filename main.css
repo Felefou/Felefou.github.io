@@ -12,7 +12,22 @@ h1 {
   letter-spacing: 2px;
   font-size: 48px;
 }
-
+#moteurs{
+  margin-bottom:120px;
+}
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  margin-top: 10px;
+  width:75%;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
 .header {
   position: relative;
   text-align: center;
@@ -241,6 +256,13 @@ p {
 }
 
 #beal-edelweiss{
+  margin-bottom: 10px;
+  width: 50%;
+  float:right;
+  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  border: 2px solid;
+}
+#image-1{
   margin-bottom: 10px;
   width: 50%;
   float:right;
